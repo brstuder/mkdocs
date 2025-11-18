@@ -1,0 +1,32 @@
+site_name: My Docs
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  font:
+    text: Red Hat Display
+  icon:
+    logo: fontawesome/solid/b
+  palette:
+    scheme: default
+    features:
+      - navigation.footer
+
+markdown.extensions:
+  - attr_list
+  - pymdownx.emoji:
+      - emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra:
+  social:
+    - icon: simple/linkedin
+      link: https://linkedin.com/in/bstuder1
+
+copyright: Copyright &copy; 2024 Brett Studer
