@@ -11,22 +11,4 @@ theme:
     features:
       - navigation.footer
 
-markdown_extensions:
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: materialx.emoji.twemoji
-      emoji_generator: materialx.emoji.to_svg
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: fenced_code_format
-
-extra:
-  social:
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/bstuder1
-
-copyright: Copyright &copy; 2024 Brett Studer
+copyright: Copyright &copy; 2024 Brett Studer 
