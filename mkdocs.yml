@@ -11,7 +11,7 @@ theme:
     features:
       - navigation.footer
 
-markdown.extensions:
+markdown_extensions:
   - attr_list
   - pymdownx.emoji:
       - emoji_index: !!python/name:materialx.emoji.twemoji
