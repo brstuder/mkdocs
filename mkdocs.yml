@@ -1,5 +1,5 @@
-site_name: My Docs
-site_url: https://mydomain.org/mysite
+site_name: Brett Studer
+site_url: https://brettstuder.com/portfolio
 theme:
   name: material
   font:
@@ -11,4 +11,7 @@ theme:
     features:
       - navigation.footer
 
-copyright: Copyright &copy; 2024 Brett Studer 
+plugins:
+  - search
+
+copyright: Copyright &copy; 2025 Brett Studer 
