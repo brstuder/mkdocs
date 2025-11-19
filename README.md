@@ -1,2 +1,0 @@
-# mkdocs
-Test MkDocs Environment
