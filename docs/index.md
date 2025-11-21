@@ -1,19 +1,8 @@
 # Welcome to my portfolio!
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+My name is Brett, and this my online portfolio.
 
-## Commands
+This portfolio was built in GitHub and Visual Studio Code, written in Markdown, CSS, and Mkdocs Material, and hosted via GitHub Pages to demonstrate proficiency with syntax languages, static site generators, and version control tooling. You can view the source code [here](https://github.com/brstuder/mkdocs/tree/main). For now this is a professional showcase of my writing work, but over time I plan to expand the functionality and scope of this page as I continue to build web development skills.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+I recommend to new visitors to start with my [Kubecost](kubecost/kubecost-overview.md) and [MobiledgeX](mobiledgex/mobiledgex.md) projects for a deep insight into the technical documentation and other multimedia I've developed over my career.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-:smile:

@@ -1,4 +1,4 @@
-site_name: Brett Studer
+site_name: My Portfolio
 site_url: https://brettstuder.com/portfolio
 theme:
   name: material
@@ -7,11 +7,61 @@ theme:
   icon:
     logo: fontawesome/solid/b
   palette:
-    scheme: default
-    features:
-      - navigation.footer
+    - scheme: slate
+      primary: cyan
+      accent: pink
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+  
+    - scheme: default
+      primary: cyan
+      accent: pink
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+  features:
+    - navigation.footer
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.extra
+  - pymdownx.superfences
+  - md_in_html
+
+extra_css:
+  - stylesheets/style.css
 
 plugins:
   - search
+  - callouts
+
+nav:
+  - Welcome: index.md
+  - Arine: arine.md
+  - Kubecost:
+      - Overview: kubecost/kubecost-overview.md
+      - Writing Samples:
+          - Budget API: kubecost/kubecost-samples/budget-api.md
+          - Cloud Cost Trend API: kubecost/kubecost-samples/cloud-cost-trend-api.md
+          - Network Monitoring: kubecost/kubecost-samples/network-monitoring.md
+          - Efficiency and Idle: kubecost/kubecost-samples/efficiency-and-idle.md
+          - Admission Controller: kubecost/kubecost-samples/admission-controller.md
+          - Kubecost Cloud GCP Marketplace Licensing: kubecost/kubecost-samples/cloud-gcp-marketplace.md
+          - Getting Highly Accurate and Granular Cost Metrics with Kubecost: kubecost/kubecost-samples/blog-getting-highly-accurate.md
+      - Diagram Samples: kubecost/diagrams.md
+  - MobiledgeX:
+      - Overview: mobiledgex/mobiledgex.md
+      - Writing Samples:
+          - Manage GPU Drivers for Cloudlets: mobiledgex/edge-samples/manage-gpu-drivers-for-cloudlets.md
+          - Mapping Virtual Machines to IaaS Resources: mobiledgex/edge-samples/mapping-virtual-machines.md 
+          - Trust Policies: mobiledgex/edge-samples/trust-policy.md
+      - Graphic Design: mobiledgex/design.md
+  - AbbVie: abbvie.md
+  - OpenMRS: openmrs.md
+  - About: about.md
+
+    
 
 copyright: Copyright &copy; 2025 Brett Studer 
