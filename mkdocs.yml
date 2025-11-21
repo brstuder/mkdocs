@@ -3,20 +3,21 @@ site_url: https://brettstuder.com/portfolio
 theme:
   name: material
   font:
-    text: Red Hat Display
+    text: Roboto
   icon:
     logo: fontawesome/solid/b
+  favicon: images/b.png
   palette:
     - scheme: slate
-      primary: cyan
-      accent: pink
+      primary: light blue
+      accent: orange
       toggle:
         icon: material/lightbulb
         name: Switch to dark mode
   
     - scheme: default
-      primary: cyan
-      accent: pink
+      primary: light blue
+      accent: orange
       toggle:
         icon: material/lightbulb-outline
         name: Switch to dark mode

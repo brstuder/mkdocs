@@ -100,7 +100,7 @@ different kernel versions. All drivers and their license configurations are cach
 MobiledgeX admins will not be able to access. They are only accessible by users belonging to the operator organization and
 developers belonging to the cloudlet pool.
 
-## Step 2. Associate a GPU driver with a cloudlet
+### Step 2. Associate a GPU driver with a cloudlet
 
 There are two ways to initiate associating a GPU driver with a cloudlet:
 * Update an existing an cloudlet
@@ -124,7 +124,7 @@ Once a GPU driver is associated with a cloudlet, MobiledgeX services will automa
 application deployments based on Kubernetes and Docker. It will also automate license configuration wherever applicable.
 Automated deployment of drivers for VM deployments is not currently supported.
 
-## Step 3: Monitor usage statistics for GPU resources across cloudlets
+### Step 3: Monitor usage statistics for GPU resources across cloudlets
 
 Operators are provided with statistics on the count of GPUs used across their cloudlets. This gives operators a better insight
 into the usage pattern of GPUs that can help with cost optimization. This can be viewed in the Monitoring section of the
