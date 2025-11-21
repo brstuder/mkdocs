@@ -37,6 +37,18 @@ plugins:
   - search
   - callouts
 
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/bstuder1
+      name: LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/brstuder
+      name: GitHub
+    - icon: fontawesome/solid/envelope
+      link: mailto:brett.studer99@gmail.com
+      name: Email
+
 nav:
   - Welcome: index.md
   - Arine: arine.md
