@@ -1,7 +1,7 @@
 # OpenMRS
 *05/21 - 11/21*
 
-As part of Google's Season of Docs program, I worked half a year with OpenMRS. Our objective was to improve the efficiency and clarity of new user onboarding, allowing users to get set up and find a project within the group they could immediately start contributing to.
+As part of Google's Season of Docs program ([which has since been discontinued](https://developers.google.com/season-of-docs)), I worked half a year with OpenMRS. Our objective was to improve the efficiency and clarity of new user onboarding, allowing users to get set up and find a project within the group they could immediately start contributing to.
 
 ## Key Projects
 

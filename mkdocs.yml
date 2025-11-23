@@ -52,7 +52,6 @@ extra:
 
 nav:
   - Welcome: index.md
-  - Arine: arine.md
   - Kubecost:
       - Overview: kubecost/kubecost-overview.md
       - Writing Samples:
@@ -63,7 +62,7 @@ nav:
           - Admission Controller: kubecost/kubecost-samples/admission-controller.md
           - Kubecost Cloud GCP Marketplace Licensing: kubecost/kubecost-samples/cloud-gcp-marketplace.md
           - Getting Highly Accurate and Granular Cost Metrics with Kubecost: kubecost/kubecost-samples/blog-getting-highly-accurate.md
-      - Diagram Samples: kubecost/diagrams.md
+      - Architecture Diagrams: kubecost/diagrams.md
   - MobiledgeX:
       - Overview: mobiledgex/mobiledgex.md
       - Writing Samples:
@@ -71,8 +70,12 @@ nav:
           - Mapping Virtual Machines to IaaS Resources: mobiledgex/edge-samples/mapping-virtual-machines.md 
           - Trust Policies: mobiledgex/edge-samples/trust-policy.md
       - Graphic Design: mobiledgex/design.md
-  - AbbVie: abbvie.md
-  - OpenMRS: openmrs.md
+  - Other Roles:
+      - Arine: arine.md
+      - AbbVie: abbvie.md
+      - OpenMRS: openmrs.md
+  - Portfolio Projects:
+      - Audubon API: audubon-api.md
   - About: about.md
 
     
