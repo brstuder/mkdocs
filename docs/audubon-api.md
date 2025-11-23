@@ -9,7 +9,7 @@ Audubon API is a conservation tool to catalog all sightings of wild bird species
 | Name            | Type      | Description |
 |-----------------|-----------|-------------|
 | `name`          | string    | Full common name of the species written in longhand (e.g., “Northern Cardinal”). |
-| `color`         | string    | Basic color(s) typically visible on the species. Supports comma-separated list for multiple colors (e.g., `red, brown`). See [Colors](#colors) for a full list of accepted color values. |
+| `color`         | string    | Basic color(s) typically visible on the species. Supports comma-separated list for multiple colors (e.g., `red,brown`). See [Colors](#colors) for a full list of accepted color values. |
 | `endangered`    | boolean   | Indicates whether the species is listed as endangered (`true` or `false`). Birds with a value of `endangered=true` should meet the [IUCN's definition of vulnerable](https://www.iucnredlist.org/) or a more severe categorization. |
 | `size`          | string    | General size category of the species. Accepts: `tiny`, `small`, `medium`, or `large`. See [Estimating Size](#estimating-size) for a better understanding of how to use this parameter. |
 | `migratory`     | boolean   | Indicates whether the species participates in seasonal migration. |
@@ -23,7 +23,7 @@ Birds come in all different colors, and so the `color` parameter should be flexi
 
 Supported values for `color` include: `white`, `black`, `red`, `orange`, `yellow`, `green`, `blue`, `indigo`, `violet`, `brown`, `pink`, and `gray`.
 
-When calling the API by providing multiple color values, the API will only return logged species whose colors include the full list, not an individual color from the list. Use the `color` parameter only as restrictively as you need to. Additionally, as a best practice, avoid logging a new species with more than 2 colors to ensure it can be readily retrieved later. 
+When calling the API by providing multiple color values, the API will only return logged species whose colors include the full list, not an individual color from the list. Use the `color` parameter only as restrictively as you need to. Additionally, as a best practice, avoid logging a new species with more than 2 colors to ensure it can be readily retrieved later.
 
 ### Estimating Size
 
@@ -66,6 +66,7 @@ After logging a new species, we will receive an output that confirms all details
 ```
 
 ### Filtering for Species by Parameter(s)
+
 When performing a `GET` request, you can include one or multiple query parameters to list all relevant logged species. This can be useful to identify a particular species by the provided physical descriptors, such as size and color.
 
 #### Example: Querying for all yellow birds
@@ -173,11 +174,13 @@ curl -X GET http://localhost:8080/audubon?color=green,brown&size=medium&endanger
 }
 ```
 
-The Audubon API returns three species: Mallard, Green Heron, and Wood Duck. Two of these species are ducks, and one is a heron. From the image, we can safely determine the pictured species is not a duck. Therefore, we conclude the species must be a green heron (and we'd be correct!).
+The Audubon API returns three species: Green Heron, Mallard, and Wood Duck. Two of these species are ducks, and one is a heron. From the image, we can safely determine the pictured species is not a duck. Therefore, we conclude the species must be a green heron (and we'd be correct!).
 
 ### Filtering for Individual Species
 
 Because each logged species will have a unique `name` value (whereas all other parameters can be shared by multiple species), you should filter for an individual species by querying by its full common name.
+
+Since we have already logged the American Robin, let's check that it still exists:
 
 `curl -X GET "http://localhost:8080/audubon?name=American%20Robin"`
 
@@ -199,3 +202,33 @@ Because each logged species will have a unique `name` value (whereas all other p
 ```
 
 Of course, each species has a unique `id` value that is created after being successfully logged, and therefore can be uniquely retrieved by calling the API with that value. That being said, the bird's common name may be easier to remember than a long string of digits.
+
+### Updating Logged Species with Recent Sighting
+
+Suppose we have recently spotted an endangered species, in this example a piping plover. The species has already been logged with the Audubon API, but now we want to update the `lastSpotted` value with a more recent date.
+
+```
+curl -X PATCH "http://localhost:8080/audubon?name=Piping%20Plover" \
+  -H "Content-Type: application/json" \
+  -d '{"lastSpotted": "11-23-25"}'
+```
+
+The species log will update only the `lastSpotted` value, while immutable qualities like `color` and `size` are unaffected.
+
+```py title="200: OK"
+{
+  "status": "success",
+  "message": "Species updated successfully",
+  "data": {
+    "id": "h4k8j0i9-3g7l-0k5h-4i9j-1l2g5h8k7j0i",
+    "name": "Piping Plover",
+    "color": ["white", "gray"],
+    "endangered": true,
+    "size": "tiny",
+    "migratory": true,
+    "lastSpotted": "11-23-25",
+    "createdAt": "2025-08-12T10:34:56Z",
+    "updatedAt": "2025-11-23T15:42:31Z"
+  }
+}
+```
