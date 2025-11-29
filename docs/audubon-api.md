@@ -126,7 +126,7 @@ For this use case, we will use this commonly sighted water bird. You may already
 From this bird's appearance, and from multiple encounters with this species, we can already provide multiple parameter values to help us out:
 
 * We know the predominant colors are green and brown.
-* We know the bird is closer in size to a crow than a robin or a goose.
+* We know the bird is closer in size to a raven than a robin or a goose.
 * We have seen the bird multiple times, indicating it is likely not endangered.
 
 With these details, we can call the Audubon API as such:
@@ -153,7 +153,7 @@ curl -X GET http://localhost:8080/audubon?color=green,brown&size=medium&endanger
     {
       "id": "f2i6h8g7-1e5j-8i3f-2g7h-9j0e3f6i5h8g",
       "name": "Mallard",
-      "color": ["green", "brown"],
+      "color": ["green", "brown", "white"],
       "endangered": false,
       "size": "medium",
       "migratory": true,
