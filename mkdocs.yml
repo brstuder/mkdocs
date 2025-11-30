@@ -2,27 +2,31 @@ site_name: My Portfolio
 site_url: https://brettstuder.com/portfolio
 theme:
   name: material
+  # custom_dir
   font:
-    text: Roboto
+    text: Inter
+    code: JetBrains Mono
   icon:
     logo: fontawesome/solid/b
   favicon: images/b.png
   palette:
-    - scheme: slate
-      primary: light blue
-      accent: orange
+    - scheme: slate #dark mode scheme
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/lightbulb
+        icon: material/lightbulb #light/dark mode button
         name: Switch to dark mode
-  
-    - scheme: default
-      primary: light blue
-      accent: orange
+    - scheme: default #light mode scheme
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/lightbulb-outline
+        icon: material/lightbulb-outline #light/dark mode button
         name: Switch to dark mode
   features:
-    - navigation.footer
+    - navigation.top           # "Back to top" button
+    - navigation.footer        # Previous/next page links
+    - content.code.copy         # Copy button for code blocks
+    - content.code.annotate     # Enable code annotations
 
 markdown_extensions:
   - admonition
@@ -30,13 +34,39 @@ markdown_extensions:
   - pymdownx.extra
   - pymdownx.superfences
   - md_in_html
+    # Content organization
+  - pymdownx.tabbed:
+      alternate_style: true
+  # Code highlighting
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  
+  - pymdownx.snippets
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+  - pymdownx.smartsymbols
+  - def_list
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this page
 
 extra_css:
   - stylesheets/style.css
 
 plugins:
-  - search
-  - callouts
+  - search #includes a search bar at the top of the page
+  - callouts #used for adding context-specific note blocks into my content
+  - tags #better cataloguing of all content
 
 extra:
   social:
@@ -75,9 +105,8 @@ nav:
       - AbbVie: abbvie.md
       - OpenMRS: openmrs.md
   - Portfolio Projects:
-      - Audubon API: audubon-api.md
+      - Audubon API: projects/audubon-api.md
+      - Mkdocs Demo: projects/mkdocs-demo.md
   - About: about.md
-
-    
 
 copyright: Copyright &copy; 2025 Brett Studer 

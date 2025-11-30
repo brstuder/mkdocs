@@ -6,8 +6,6 @@ Architecture diagrams were mostly generated in draw.io. All diagrams are publicl
 
 ![image](../images/kubecost/kube-architecture.png)
 
-![image](../images/kubecost/arch-diagram.png)
-
 ![image](../images/kubecost/aggregator.png)
 
 ![image](../images/kubecost/fed-etl-agg-arch.png)

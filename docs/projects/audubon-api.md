@@ -121,7 +121,7 @@ The example output returns only three species, but you may see more, fewer, or d
 
 For this use case, we will use this commonly sighted water bird. You may already know its common full name, but if not, let's see if the Audubon API can help us out. The intent is to retrieve logs from other users in hopes we can deduce the correct species.
 
-![image](images/bird.png)
+![image](../images/bird.png)
 
 From this bird's appearance, and from multiple encounters with this species, we can already provide multiple parameter values to help us out:
 
