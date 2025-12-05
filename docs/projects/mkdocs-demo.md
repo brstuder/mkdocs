@@ -12,13 +12,13 @@ There are several additions to our code blocks we can make that improve their di
 
 ### Color Coding
 
-In order for code blocks to display with color-coded syntax, we need to tell Mkdocs what type of content we are writing in that table by adding it to our code block. In this example, we're adding color coding to an example of Python code like:
+In order for code blocks to display with color-coded syntax, we must tell Mkdocs what type of content is being to our code block. In this example, we're adding color coding to an example of Python code like:
 
 ```py
 print("Hello, World!")
 ```
 
-This is written as:
+This is written by using the code or syntax shorthand in the top row of backticks that creates the code block:
 
 ````
 ```py
@@ -26,11 +26,11 @@ print("Hello, World!")
 ```
 ````
 
-However, this also supports `html`, `css`, `yaml`, `json`, and other formats we may need to display. We will continue to use this method throughout the article with different formats to better demonstrate.
+We use `py` as shorthand for Python, but this also supports `html`, `css`, `yaml`, `json`, and other formats we may need to display. We will continue to use this method throughout the article with different formats to better demonstrate.
 
 ### Copy to Clipboard
 
-You'll notice in the code blocks above, we can select an icon in the top right to copy the code to our clipboard. To enable this, add this to your `mkdocs.yml`:
+You'll notice in every code block on this page, we can select an icon in the top right to copy the code to our clipboard. To enable this sitewide, add this to your `mkdocs.yml`:
 
 ```yaml
 theme:
@@ -40,7 +40,7 @@ theme:
 
 ### Adding Titles to Code Blocks
 
-We've made some great additions to our code blocks, but now suppose we want to add more context to our code blocks so users know what they are supposed to be looking at. This can be useful for labeling API payloads by their response code, for example:
+We've made some great additions to our code blocks, but now suppose we want to add more context to our code blocks. This can be useful for labeling API payloads by their response code, for example:
 
 ```py title="404: Not Found"
 {
