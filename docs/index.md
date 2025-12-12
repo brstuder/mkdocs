@@ -7,16 +7,16 @@ My name is Brett, and I write docs.
 As a technical writer, I have worked in both software and healthcare companies, but my focus has been with fledgling startups, building out their knowledge bases with nowhere to go but forward. I have worked through multiple tool migrations, and have built out style and contribution guidelines for many companies as they look for a voice that represents their brand and their values. You can select from these company logos to learn more about my involvement with each.
 
 <div class="icon-grid">
-  <a href="kubecost/kubecost-overview" class="icon-button">
+  <a href="kubecost/kubecost-overview.md" class="icon-button">
     <img src="images/welcome/logo1.png" alt="Kubecost">
   </a>
-  <a href="mobiledgex/mobiledgex" class="icon-button">
+  <a href="mobiledgex/mobiledgex.md" class="icon-button">
     <img src="images/welcome/logo2.png" alt="MobiledgeX">
   </a>
-  <a href="arine" class="icon-button">
+  <a href="arine.md" class="icon-button">
     <img src="images/welcome/logo3.png" alt="Arine">
   </a>
-  <a href="openmrs" class="icon-button">
+  <a href="openmrs.md" class="icon-button">
     <img src="images/welcome/logo4.png" alt="OpenMRS">
   </a>
 </div>

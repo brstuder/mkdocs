@@ -1,5 +1,6 @@
-site_name: My Portfolio
-site_url: https://brettstuder.com/portfolio
+use_directory_urls: true
+site_name: Brett Studer
+site_url: https://brstuder.github.io/portfolio/
 theme:
   name: material
   font:
@@ -60,7 +61,7 @@ markdown_extensions:
       title: On this page
 
 extra_css:
-  - stylesheets/style.css
+  - /portfolio/stylesheets/style.css
 
 plugins:
   - search #includes a search bar at the top of the page
