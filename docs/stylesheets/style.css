@@ -1,34 +1,52 @@
-/* Import modern system fonts with fallbacks */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter/Inter_18pt-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-weight: bold;
 }
 
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter/Inter_18pt-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+[data-md-color-scheme="default"] .md-typeset h1 {
+  color: #000000;
 }
 
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter/Inter_18pt-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: #ffffff;
 }
 
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter/Inter_18pt-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+/* All this CSS creates the 2x2 logo grid on the home page. No code required for basic interactable elements, just plain ol' CSS. */ 
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 2px solid #d0d0d0;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #4a9eff;
+}
+
+.icon-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

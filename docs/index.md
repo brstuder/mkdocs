@@ -1,8 +1,31 @@
 # Welcome to my portfolio!
 
-My name is Brett, and this my online portfolio.
+My name is Brett, and I write docs.
 
-This portfolio was built in GitHub and Visual Studio Code, written in Markdown, CSS, and Mkdocs Material, and hosted via GitHub Pages to demonstrate proficiency with syntax languages, static site generators, and version control tooling. You can view the source code [here](https://github.com/brstuder/mkdocs/tree/main). For now this is a professional showcase of my writing work, but over time I plan to expand the functionality and scope of this page as I continue to build web development skills.
+## My Work
 
-I recommend to new visitors to start with my [Kubecost](kubecost/kubecost-overview.md) and [MobiledgeX](mobiledgex/mobiledgex.md) projects for a deep insight into the technical documentation and other multimedia I've developed over my career.
+As a technical writer, I have worked in both software and healthcare companies, but my focus has been with fledgling startups, building out their knowledge bases with nowhere to go but forward. I have worked through multiple tool migrations, and have built out style and contribution guidelines for many companies as they look for a voice that represents their brand and their values. You can select from these company logos to learn more about my involvement with each.
+
+<div class="icon-grid">
+  <a href="kubecost/kubecost-overview" class="icon-button">
+    <img src="images/welcome/logo1.png" alt="Kubecost">
+  </a>
+  <a href="mobiledgex/mobiledgex" class="icon-button">
+    <img src="images/welcome/logo2.png" alt="MobiledgeX">
+  </a>
+  <a href="arine" class="icon-button">
+    <img src="images/welcome/logo3.png" alt="Arine">
+  </a>
+  <a href="openmrs" class="icon-button">
+    <img src="images/welcome/logo4.png" alt="OpenMRS">
+  </a>
+</div>
+
+## About This Page
+
+This portfolio was built in GitHub and Visual Studio Code, written in Markdown, CSS, and Mkdocs Material, and hosted via GitHub Pages to demonstrate proficiency with syntax languages, static site generators, and version control tooling. For a deeper dive into my technical skillset, see the [About](about.md) page.
+
+## First Visit?
+
+I recommend to new visitors to start with my [Kubecost](kubecost/kubecost-overview.md) and [MobiledgeX](mobiledgex/mobiledgex.md) projects for a deep look into my professional work.
 

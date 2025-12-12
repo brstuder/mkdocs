@@ -1,9 +1,7 @@
 # Kubecost
 *June 2022 - May 2024*
 
-As the primary technical writer for Kubecost, a growing SaaS startup focused on providing cost visibility for cloud service spend in the Kubernetes space, I've served for two years as our primary documentation owner and maintainer. I have also contributed to company blog posts, release notes, API docs, and architecture diagrams.
-
-Content was originally developed through a combination of GitHub, GitBook, draw.io, Adobe, Postman, and other select dev tools.
+Kubecost is a SaaS startup focused on providing cost visibility for cloud service spend in the Kubernetes space, and was acquired by IBM in 2024. For two years, I served as the company's first and only technical writer, as well as the primary maintainer of the company's documentation repository. I have also contributed to company blog posts, release notes, API docs, and architecture diagrams.
 
 I oversaw our live docs site, [docs.kubecost.com](https://docs.kubecost.com/) (which has since been ported to IBM's web domain), a site receiving 40,000 monthly users and acted as the primary maintainer and contributor. Responsibilities and accomplishments include:
 

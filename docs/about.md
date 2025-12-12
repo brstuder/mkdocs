@@ -12,7 +12,7 @@ I have spent over 4 years working in startup companies, building and expanding k
 
 ## Processes and Workflow
 
-* **Processes**: QA testing, version control, documentation architecture, content migration
+* **Processes**: QA testing, version control, documentation architecture, content migration, open-source contributions
 
 * **Methodologies**: Agile, docs-as-code
 

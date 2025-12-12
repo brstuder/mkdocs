@@ -2,10 +2,9 @@ site_name: My Portfolio
 site_url: https://brettstuder.com/portfolio
 theme:
   name: material
-  # custom_dir
   font:
-    text: Inter
-    code: JetBrains Mono
+    text: Google Sans Flex
+    code: Roboto Mono
   icon:
     logo: fontawesome/solid/b
   favicon: images/b.png
