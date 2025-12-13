@@ -107,6 +107,6 @@ nav:
   - Portfolio Projects:
       - Audubon API: projects/audubon-api.md
       - Mkdocs Demo: projects/mkdocs-demo.md
-  - About: about.md
+  - About Me: about.md
 
 copyright: Copyright &copy; 2025 Brett Studer 
