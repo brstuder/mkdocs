@@ -1,6 +1,6 @@
 # Architecture Diagrams
 
-To supplement the technical documentation we were writing, it was helpful to generate architecture diagrams to visualize concepts like upgraded software architecture, Kubernetes objects, software integrations, and other learning aids.
+To supplement the technical documentation we were writing, it was helpful to generate architecture diagrams to visualize concepts like upgraded software architecture, Kubernetes objects, software integrations, and other concepts.
 
 Architecture diagrams were mostly generated in draw.io. All diagrams are publicly available through Kubecost web properties.
 

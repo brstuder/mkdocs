@@ -1,6 +1,7 @@
-# Welcome to my portfolio!
-
-My name is Brett, and I write docs.
+<div class="banner">
+<h1>Welcome to my portfolio!</h1>
+<p>My name is Brett, and I write docs.</p>
+</div> 
 
 ## My Work
 
@@ -25,9 +26,9 @@ You can select from these company logos to learn more about my involvement with 
 
 ## About This Portfolio
 
-This portfolio was built in GitHub and Visual Studio Code, written in Markdown, CSS, and Mkdocs Material, and hosted via GitHub Pages to demonstrate proficiency with syntax languages, static site generators, and version control tooling.
+This portfolio was built using GitHub and Visual Studio Code, written in Markdown, HTML + CSS, and Mkdocs Material, and hosted via GitHub Pages to demonstrate proficiency with syntax languages, static site generators, and version control tooling. The result is a simple, clean portfolio site that serves as a constantly-evolving sandbox for me to continue building my web dev skills.
 
-For a deeper dive into my technical skillset, see the [About Me](about.md) page.
+For a deeper dive into my technical skill set, see the [About Me](about.md) page.
 
 ## First Visit?
 

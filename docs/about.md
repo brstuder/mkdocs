@@ -64,4 +64,7 @@ I have spent over 4 years working in startup companies, building and expanding k
 * **Content Types:** Product/software documentation, API docs, release notes, style guides, blogs, onboarding and installation guides, architecture diagrams, graphic design
 
 
- 
+## Certifications
+
+* Postman, *Postman API Fundamentals Student Expert* (November 2025)
+* FinOps Foundation, *Introduction to FOCUS* (May 2024)

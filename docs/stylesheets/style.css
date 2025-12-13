@@ -5,6 +5,7 @@
   font-weight: bold;
 }
 
+/* The header color changes depending whether the user is in light or dark mode */
 [data-md-color-scheme="default"] .md-typeset h1 {
   color: #000000;
 }
@@ -50,7 +51,7 @@
   object-fit: contain;
 }
 
-/* Work experience cards */
+/* This creates the interactive icon buttons on the About Me page */
 .experience-container {
     display: flex;
     flex-direction: column;
@@ -123,4 +124,18 @@
     .experience-content {
         padding-top: 0;
     }
+}
+
+/* Misc. image formatting */
+image {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+/* Homepage banner */
+.banner {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
 }
