@@ -1,5 +1,5 @@
 # Kubecost
-*June 2022 - May 2024*
+*June 2022 - June 2024*
 
 Kubecost is a SaaS startup focused on providing cost visibility for cloud service spend in the Kubernetes space, and was acquired by IBM in 2024. For two years, I served as the company's first and only technical writer, as well as the primary maintainer of the company's documentation repository. I have also contributed to company blog posts, release notes, API docs, and architecture diagrams.
 
