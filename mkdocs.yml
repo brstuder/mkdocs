@@ -11,14 +11,14 @@ theme:
   favicon: images/b.png
   palette:
     - scheme: slate #dark mode scheme
-      primary: light blue
-      accent: orange
+      primary: green
+      accent: light green
       toggle:
         icon: material/lightbulb #light/dark mode button
         name: Switch to dark mode
     - scheme: default #light mode scheme
-      primary: light blue
-      accent: orange
+      primary: green
+      accent: light green
       toggle:
         icon: material/lightbulb-outline #light/dark mode button
         name: Switch to dark mode

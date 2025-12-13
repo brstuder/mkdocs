@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 3 / 1;
   padding: 1.5rem;
   background-color: #ffffff;
   border: 2px solid #d0d0d0;
@@ -42,7 +42,7 @@
 .icon-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-color: #4a9eff;
+  border-color: #21d05e;
 }
 
 .icon-button img {
@@ -85,7 +85,7 @@
 .experience-icon:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-color: #4a9eff;
+    border-color: #21d05e;
 }
 
 .experience-icon img {
